@@ -109,3 +109,52 @@ document.getElementById("rail-call").addEventListener("click", function () {
 document.getElementById("clear").addEventListener("click", function () {
   document.getElementById("call-log").innerHTML = "";
 });
+
+// copy number
+
+function copyNumber(numberid) {
+  const number = document.getElementById(numberid).innerText;
+
+  let count = document.getElementById("copy-count").innerText;
+  count = parseInt(count);
+  count += 1;
+  document.getElementById("copy-count").innerText = count;
+
+  navigator.clipboard
+    .writeText(number)
+    .then(() => {
+      alert(`Copied to clipboard: ${number}`);
+    })
+    .catch((err) => {
+      console.error("Failed to copy text: ", err);
+    });
+}
+
+
+document.getElementById("rail-copy").addEventListener("click", function () {
+  copyNumber("rail-number");
+});
+document.getElementById("brac-copy").addEventListener("click", function () {
+  copyNumber("brac-number");
+});
+document.getElementById("electro-copy").addEventListener("click", function () {
+  copyNumber("electro-number");
+});
+document.getElementById("anti-copy").addEventListener("click", function () {
+  copyNumber("anti-number");
+});
+document.getElementById("women-copy").addEventListener("click", function () {
+  copyNumber("women-number");
+});
+document.getElementById("ambulance-copy").addEventListener("click", function () {
+  copyNumber("ambulance-number");
+});
+document.getElementById("fire-copy").addEventListener("click", function () {
+  copyNumber("fire-number");
+});
+document.getElementById("police-copy").addEventListener("click", function () {
+  copyNumber("police-number");
+});
+document.getElementById("nat-em-copy").addEventListener("click", function () {
+  copyNumber("nat-em-number");
+});
