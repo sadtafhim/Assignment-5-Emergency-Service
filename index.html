@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service Directory</title>
+    <link rel="stylesheet" href="css/font.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -31,7 +32,7 @@
               alt=""
             />
             <a
-              class="btn btn-ghost text-base lg:text-xl text-left text-green-900 font-bold h-[50px]"
+              class="btn btn-ghost text-base lg:text-xl text-left text-green-900 font-bold h-[50px] hind-madurai-regular"
               >Emergency <br />
               Service</a
             >
@@ -42,19 +43,20 @@
                 <button
                   class="btn font-black rounded-4xl w-[60px] lg:w-[100px]"
                 >
-                  0 <img class="w-[25px]" src="assets/heart.png" alt="" />
+                  <span id="heart-count">0</span>
+                  <img class="w-[25px]" src="assets/heart.png" alt="" />
                 </button>
               </li>
               <li>
                 <button
-                  class="btn font-black rounded-4xl w-[60px] lg:w-[100px]"
+                  class="btn font-black rounded-4xl w-[60px] lg:w-[100px] hind-madurai-regular"
                 >
                   100 <img class="w-[25px]" src="assets/coin.png" alt="" />
                 </button>
               </li>
               <li>
                 <button
-                  class="btn bg-green-600 rounded-4xl w-[60px] lg:w-[100px] text-white"
+                  class="btn bg-green-600 rounded-4xl w-[60px] lg:w-[100px] text-white hind-madurai-regular"
                 >
                   <span>0</span>Copy
                 </button>
@@ -68,10 +70,17 @@
       <section
         class="w-[100%] h-[240px] bg-gradient-to-r from-emerald-950 via-emerald-800 to-emerald-950 flex flex-col justify-center items-center mb-8"
       >
-        <img class="h-[60px] w-[60px] lg:h-[92px] lg:w-[92px]" src="assets/logo-dark.png" alt="" />
-        <h1 class="text-white text-4xl mb-4 text-center">Emergency Service Directory</h1>
-        <p class="text-white text-xl text-center">
-          Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh
+        <img
+          class="h-[60px] w-[60px] lg:h-[92px] lg:w-[92px]"
+          src="assets/logo-dark.png"
+          alt=""
+        />
+        <h1 class="text-white text-4xl mb-4 text-center hind-madurai-regular">
+          Emergency Service Directory
+        </h1>
+        <p class="text-white text-xl text-center hind-madurai-regular">
+          Government Emergency Services at Your Fingertip - A Project by
+          Government of the People's Republic of Bangladesh
         </p>
       </section>
       <section class="lg:flex mx-8 gap-8">
@@ -89,20 +98,20 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart fa-lg"></i>
+              <i id="nat-em-heart" class="fa-regular fa-heart fa-lg"></i>
             </div>
-            <h1 class="text-xl font-bold">National Emergency Number</h1>
-            <p class="text-sm mb-4">National Emergency</p>
-            <h1 class="text-3xl mb-1">999</h1>
-            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2">
+            <h1 class="text-xl font-bold hind-madurai-regular">National Emergency Number</h1>
+            <p class="text-sm mb-4 hind-madurai-regular">National Emergency</p>
+            <h1 class="text-3xl mb-1 hind-madurai-regular">999</h1>
+            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2 hind-madurai-regular">
               All
             </button>
             <div class="flex justify-center gap-2">
-              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%]">
+              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%] hind-madurai-regular">
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white"
+                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white hind-madurai-regular"
               >
                 <i class="fa-solid fa-phone"></i>Call
               </button>
@@ -115,22 +124,22 @@
               >
                 <img class="w-[32px] h-[32px]" src="assets/police.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart fa-lg"></i>
+              <i id="police-heart" class="fa-regular fa-heart fa-lg heart"></i>
             </div>
-            <h1 class="text-xl font-bold">Police Helpline Number</h1>
-            <p class="text-sm mb-4">Police</p>
-            <h1 class="text-3xl mb-1">999</h1>
-            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2">
+            <h1 class="text-xl font-bold hind-madurai-regular">Police Helpline Number</h1>
+            <p class="text-sm mb-4 hind-madurai-regular">Police</p>
+            <h1 class="text-3xl mb-1 hind-madurai-regular">999</h1>
+            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2 hind-madurai-regular">
               Police
             </button>
             <div class="flex justify-center gap-2">
-              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%]">
+              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%] hind-madurai-regular">
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white"
+                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white hind-madurai-regular"
               >
-                <i class="fa-solid fa-phone"></i>Call
+                <i class="fa-solid fa-phone "></i>Call
               </button>
             </div>
           </div>
@@ -145,20 +154,20 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart fa-lg"></i>
+              <i id="fire-heart" class="fa-regular fa-heart fa-lg"></i>
             </div>
-            <h1 class="text-xl font-bold">Fire Service Number</h1>
-            <p class="text-sm mb-4">Fire Service</p>
-            <h1 class="text-3xl mb-1">999</h1>
+            <h1 class="text-xl font-bold hind-madurai-regular">Fire Service Number</h1>
+            <p class="text-sm mb-4 hind-madurai-regular">Fire Service</p>
+            <h1 class="text-3xl mb-1 hind-madurai-regular">999</h1>
             <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2">
               Fire
             </button>
             <div class="flex justify-center gap-2">
-              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%]">
+              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%] hind-madurai-regular">
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white"
+                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white hind-madurai-regular"
               >
                 <i class="fa-solid fa-phone"></i>Call
               </button>
@@ -175,20 +184,20 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart fa-lg"></i>
+              <i id="ambulance-heart" class="fa-regular fa-heart fa-lg"></i>
             </div>
-            <h1 class="text-xl font-bold">Ambulance Service</h1>
-            <p class="text-sm mb-4">Ambulance</p>
-            <h1 class="text-3xl mb-1">1994-999999</h1>
-            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2">
+            <h1 class="text-xl font-bold hind-madurai-regular">Ambulance Service</h1>
+            <p class="text-sm mb-4 hind-madurai-regular">Ambulance</p>
+            <h1 class="text-3xl mb-1 hind-madurai-regular">1994-999999</h1>
+            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2 hind-madurai-regular">
               Health
             </button>
             <div class="flex justify-center gap-2">
-              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%]">
+              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%] hind-madurai-regular">
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white"
+                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white hind-madurai-regular"
               >
                 <i class="fa-solid fa-phone"></i>Call
               </button>
@@ -205,20 +214,20 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart fa-lg"></i>
+              <i id="women-heart" class="fa-regular fa-heart fa-lg"></i>
             </div>
-            <h1 class="text-xl font-bold">Women & Child Helpline</h1>
-            <p class="text-sm mb-4">Women & Child Helpline</p>
-            <h1 class="text-3xl mb-1">109</h1>
-            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2">
+            <h1 class="text-xl font-bold hind-madurai-regular">Women & Child Helpline</h1>
+            <p class="text-sm mb-4 hind-madurai-regular">Women & Child Helpline</p>
+            <h1 class="text-3xl mb-1 hind-madurai-regular">109</h1>
+            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2 hind-madurai-regular">
               Help
             </button>
             <div class="flex justify-center gap-2">
-              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%]">
+              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%] hind-madurai-regular">
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white"
+                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white hind-madurai-regular"
               >
                 <i class="fa-solid fa-phone"></i>Call
               </button>
@@ -235,20 +244,20 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart fa-lg"></i>
+              <i id="anti-heart" class="fa-regular fa-heart fa-lg"></i>
             </div>
-            <h1 class="text-xl font-bold">Anti-Corruption Helpline</h1>
-            <p class="text-sm mb-4">Anti-Corruption</p>
-            <h1 class="text-3xl mb-1">106</h1>
-            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2">
+            <h1 class="text-xl font-bold hind-madurai-regular">Anti-Corruption Helpline</h1>
+            <p class="text-sm mb-4 hind-madurai-regular">Anti-Corruption</p>
+            <h1 class="text-3xl mb-1 hind-madurai-regular">106</h1>
+            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2 hind-madurai-regular">
               Govt.
             </button>
-            <div class="flex justify-center gap-2">
+            <div class="flex justify-center gap-2 hind-madurai-regular">
               <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%]">
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white"
+                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white hind-madurai-regular"
               >
                 <i class="fa-solid fa-phone"></i>Call
               </button>
@@ -265,20 +274,20 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart fa-lg"></i>
+              <i id="electro-heart" class="fa-regular fa-heart fa-lg"></i>
             </div>
-            <h1 class="text-xl font-bold">Electricity Helpline</h1>
-            <p class="text-sm mb-4">Electricity Outage</p>
-            <h1 class="text-3xl mb-1">16216</h1>
-            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2">
+            <h1 class="text-xl font-bold hind-madurai-regular">Electricity Helpline</h1>
+            <p class="text-sm mb-4 hind-madurai-regular">Electricity Outage</p>
+            <h1 class="text-3xl mb-1 hind-madurai-regular">16216</h1>
+            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2 hind-madurai-regular">
               Electricity
             </button>
             <div class="flex justify-center gap-2">
-              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%]">
+              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%] hind-madurai-regular">
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white"
+                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white hind-madurai-regular"
               >
                 <i class="fa-solid fa-phone"></i>Call
               </button>
@@ -295,20 +304,20 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart fa-lg"></i>
+              <i id="brac-heart" class="fa-regular fa-heart fa-lg"></i>
             </div>
-            <h1 class="text-xl font-bold">Brac Helpline</h1>
-            <p class="text-sm mb-4">Brac</p>
-            <h1 class="text-3xl mb-1">16445</h1>
-            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2">
+            <h1 class="text-xl font-bold hind-madurai-regular">Brac Helpline</h1>
+            <p class="text-sm mb-4 hind-madurai-regular">Brac</p>
+            <h1 class="text-3xl mb-1 hind-madurai-regular">16445</h1>
+            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2 hind-madurai-regular">
               NGO
             </button>
             <div class="flex justify-center gap-2">
-              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%]">
+              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%] hind-madurai-regular">
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white"
+                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white hind-madurai-regular"
               >
                 <i class="fa-solid fa-phone"></i>Call
               </button>
@@ -325,20 +334,20 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart fa-lg"></i>
+              <i id="rail-heart" class="fa-regular fa-heart fa-lg"></i>
             </div>
-            <h1 class="text-xl font-bold">Bangladesh Railway Helpline</h1>
-            <p class="text-sm mb-4">Bangladesh Railway</p>
-            <h1 class="text-3xl mb-1">163</h1>
-            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2">
+            <h1 class="text-xl font-bold hind-madurai-regular">Bangladesh Railway Helpline</h1>
+            <p class="text-sm mb-4 hind-madurai-regular">Bangladesh Railway</p>
+            <h1 class="text-3xl mb-1 hind-madurai-regular">163</h1>
+            <button class="btn btn-outline bg-neutral-100 rounded-3xl mb-2 hind-madurai-regular">
               Travel
             </button>
             <div class="flex justify-center gap-2">
-              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%]">
+              <button class="btn font-black rounded-4xl w-[50%] lg:w-[50%] hind-madurai-regular">
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white"
+                class="btn bg-green-600 rounded-4xl w-[50%] lg:w-[50%] text-white hind-madurai-regular"
               >
                 <i class="fa-solid fa-phone"></i>Call
               </button>
@@ -348,11 +357,11 @@
         <div class="lg:w-[25%] bg-white p-4 rounded-xl">
           <div class="mx-auto">
             <div class="flex justify-between">
-              <div class="flex justify-center items-center">
+              <div class="flex justify-center items-center gap-2">
                 <i class="fa-regular fa-clock"></i>
-                <h1>Call history</h1>
+                <h1 class="hind-madurai-regular">Call history</h1>
               </div>
-              <button class="btn bg-green-600 rounded-4xl w-[100px] text-white">
+              <button class="btn bg-green-600 rounded-4xl w-[100px] text-white hind-madurai-regular">
                 Clear
               </button>
             </div>
@@ -360,5 +369,6 @@
         </div>
       </section>
     </main>
+    <script src="js/index.js"></script>
   </body>
 </html>
