@@ -39,17 +39,30 @@ document.getElementById("brac-heart").addEventListener("click", function () {
 // number alert
 
 function alertAndAdd(nameid, numberid) {
-  const name = document.getElementById(nameid).innerText;
-  const number = document.getElementById(numberid).innerText;
+  const coinNumber = document.getElementById("coins-count").innerHTML;
+  let coinNumberValue = parseInt(coinNumber);
+  if (coinNumberValue <= 0) {
+    alert("Not Enough Coins, You Need Atleast 20 Coins to Call");
+  } else {
+    coinNumberValue -= 20;
+    document.getElementById("coins-count").innerHTML = coinNumberValue;
+    const name = document.getElementById(nameid).innerText;
+    const number = document.getElementById(numberid).innerText;
 
-  alert("Calling " + name + " " + number);
+    alert("Calling " + name + " " + number);
 
-  const div = document.createElement("div");
-  div.classList.add("flex", "justify-between", "items-center", "gap-2", "mb-1");
+    const div = document.createElement("div");
+    div.classList.add(
+      "flex",
+      "justify-between",
+      "items-center",
+      "gap-2",
+      "mb-1"
+    );
 
-  const now = new Date().toLocaleTimeString();
+    const now = new Date().toLocaleTimeString();
 
-  div.innerHTML = `
+    div.innerHTML = `
     <div>
       <h1 class="hind-madurai-regular font-bold">${name}</h1>
       <p class="hind-madurai-regular">${number}</p>
@@ -57,7 +70,8 @@ function alertAndAdd(nameid, numberid) {
     <h1 class="hind-madurai-regular font-bold">${now}</h1>
   `;
 
-  document.getElementById("call-log").appendChild(div);
+    document.getElementById("call-log").appendChild(div);
+  }
 }
 
 document.getElementById("nat-em-call").addEventListener("click", function () {
